@@ -47,8 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $file = fopen("clients.txt", "a");
         fwrite($file, $line . "\n");
         fclose($file);
-        header("Location: view_clients.php");
-        exit();
     }
 }
 ?>
